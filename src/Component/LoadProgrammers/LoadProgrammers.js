@@ -3,6 +3,7 @@ import Cart from '../Cart/Cart';
 import './LoadProgrammers.css'
 
 const LoadProgrammers = (props) => {
+    // load programmers data
     const [programmers, setProgrammers] = useState([]);
     useEffect(() => {
         fetch('./programmersData.JSON')
@@ -10,9 +11,13 @@ const LoadProgrammers = (props) => {
             .then(data => setProgrammers(data));
     }, [])
 
+    // use state for unique selection by id
     let [filterData, setFilterData] = useState([])
+
+    // this state for set all data to an array
     const [filterDataAll, setFilterDataAll] = useState([]);
 
+    // unique selection
     const cartClickSelect = (selectData) => {
         if (filterData.includes(selectData.id)) {
             console.log('already added');
@@ -21,6 +26,7 @@ const LoadProgrammers = (props) => {
             setFilterDataAll([...filterDataAll, selectData])
         }
     };
+    // send data cartClickSelect(filterDataAll) for showing data
     useEffect(() => {
         props.cartClickSelect(filterDataAll)
     }, [filterData])

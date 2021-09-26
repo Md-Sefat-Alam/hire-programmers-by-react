@@ -70,8 +70,6 @@ const getRatingStars = (rate) => {
                 </p>
             )
         default:
-
-
     };
 }
 

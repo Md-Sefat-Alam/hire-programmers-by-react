@@ -1,5 +1,5 @@
 import React from 'react';
-
+// it will not work ///plan korechi but apply er somou pai nai
 const Noticication = (props) => {
     const [img, name, salary] = props
     return (

@@ -7,6 +7,7 @@ const Cart = (props) => {
     // const [] = props.programmer.programmingLanguages
     const { web, git, fb, linkedin, mail, youtube } = props.programmer.links
     const links = [];
+    // dynamic links with icon
     if (web || git || fb || linkedin || mail || youtube) {
         if (web) {
             links.push(<a href={web} rel='noreferrer' style={{ textDecoration: 'none', color: 'black', padding: '3px' }} target='_blank'><i class="fas fa-globe"></i></a>)
@@ -30,6 +31,7 @@ const Cart = (props) => {
 
     return (
         <div className='cart'>
+            {/* cart er uporer part picture and links */}
             <div className='cartTop'>
                 <div className='cartTop_links'>
                     <div className="cart_left">
@@ -48,6 +50,7 @@ const Cart = (props) => {
                     </div>
                 </div>
             </div>
+            {/* cart er another details */}
             <div className='cartBottom'>
                 <h3>{name}</h3>
                 <h5 className="cart_profession">({profession})</h5>
@@ -59,6 +62,7 @@ const Cart = (props) => {
 
             </div>
             <div className='cart_selection'>
+                {/* see more button not work */}
                 <button>See More..</button>
                 <button onClick={() => props.cartClickSelect({ id, name, img, salary })}>Select</button>
             </div>

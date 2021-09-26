@@ -4,14 +4,13 @@ import './Header.css'
 
 const Header = (props) => {
     const programmers = props.selectedProg;
-    // console.log(programmers);
-    // const { id, name, img, salary } = { ...programmers }
-    // console.log({ ...programmers })
     let total = 0;
+    // total salary
     programmers.map(data => total += data.salary);
 
     let [budgetPrice, setBudgetPrice] = useState(500000);
 
+    // get input field data
     function budget(event) {
         setBudgetPrice(event.target.value)
         console.log(budgetPrice)
@@ -21,16 +20,19 @@ const Header = (props) => {
     return (
         <div>
             <div className='header'>
+                {/* site name */}
                 <div className='siteTitle'>
                     <h1>Hire <span>Programmers</span></h1>
                     <span className='hints'>just select your choise we will contact you :)</span>
                 </div>
+                {/* input field for enter budget and show it */}
                 <div className='enterBudget'>
                     <h3>Budget: {budgetPrice} TK</h3>
                     <input onChange={budget} defaultValue='500000' placeholder='Enter Your Budget' type="number" />
                     <i class="fas fa-dollar-sign"></i>
                     {/* <i class="fas fa-search"></i> */}
                 </div>
+                {/* total salary show and selected programmars show on drop down list */}
                 <div className='selectionPart'>
                     <div className='selectedPersion'>
                         <i class="far fa-handshake">
@@ -60,6 +62,7 @@ const Header = (props) => {
                             </div>
                         </i>
                     </div>
+                    {/* show total salary */}
                     <div className='salaryShow'>
                         <h3>Total: {total} TK</h3>
                     </div>
@@ -69,9 +72,4 @@ const Header = (props) => {
         </div>
     );
 };
-
-
-/* 
-<i class="fas fa-id-card"></i>
-*/
 export default Header;
