@@ -1,0 +1,70 @@
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: #CCCCFF;
+}
+.siteTitle{
+    user-select: none;
+
+}
+.siteTitle h1{
+    color: gray;
+}
+.siteTitle h1 span{
+    color: #4d83de;
+}
+.siteTitle .hints{
+    display:  block;
+    color: gray;
+    font-size: 13px;
+    margin-top: -5px;
+    margin-left: 35px;
+}
+
+.enterBudget{
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.enterBudget input{
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: #CCCCFF;
+}
+.enterBudget input:focus{
+    outline: none;
+    border: 1px solid orange;
+}
+.enterBudget i{
+    color: orange;
+    font-size: 25px;
+}
+
+.selectedPersion{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.selectedPersion i{
+    font-size: 35px;
+    color: gray;
+    cursor: pointer;
+    position: relative;
+}
+.selectedPersion i:hover{
+    color: #ff8e00;
+}
+.selectedPersion span{
+    color: white;
+    font-size: 14px;
+    background-color: red;
+    padding: 2px 2px;
+    border-radius: 12px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}

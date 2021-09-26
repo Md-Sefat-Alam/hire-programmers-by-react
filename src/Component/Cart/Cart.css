@@ -1,0 +1,98 @@
+.cart{
+    background-color: #e4eaee;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+.cartTop{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.cartTop .cartTop_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.cartTop .cartTop_links .cart_left p{
+    color: black;
+    
+}
+.cartTop .cartTop_links .cart_left p span{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.cartTop .cartTop_links .cart_left{
+}
+
+.cartTop .cartTop_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cartTop .cartTop_img div{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #4d83de;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.cartBottom{
+    /* text-align:  */
+}
+.cartBottom h3{
+    font-size: 25px;
+    padding: 5px 0px;
+    text-align: center;
+    color: #4d83de;
+}
+.cartBottom .cart_profession{
+    text-align: center;
+    color: gray;
+}
+.cartBottom p{
+    color: gray;
+    font-size: 16px;
+}
+.cartBottom p span{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart_job{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 16px;
+    color: gray;
+}
+.cart_job span{
+    color: black;
+}
+
+.cart_selection{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart_selection button{
+    padding: 5px 20px;
+    border-radius: 5px;
+    /* border: 1px solid #4d83de; */
+    border: none;
+    background-color: #4d83de;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.cart_selection button:hover{
+    color: white;
+    background-color: #0b57db;
+}
