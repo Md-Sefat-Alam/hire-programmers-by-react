@@ -17,6 +17,7 @@
     width: 100%;
     z-index: 999;
 }
+
 .cartTop .cartTop_links .cart_left p{
     color: black;
     
@@ -26,11 +27,15 @@
     font-weight: bolder;
 }
 .cartTop .cartTop_links .cart_links{
+    margin-top: 5px;
     text-align: center;
 }
 .cartTop .cartTop_links .cart_links i:hover{
     transition: all 0.3s;
     transform: scale(1.3);
+}
+.cartTop .cartTop_links .cart_right i{
+    font-size: 20px;
 }
 
 .cartTop .cartTop_img{
@@ -42,7 +47,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 5px solid #0046c0;
+    border: 3px solid #0046c0;
     overflow: hidden;
     display: flex;
     justify-content: center;

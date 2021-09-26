@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react/cjs/react.development';
 import './Header.css'
 
 const Header = (props) => {
@@ -9,6 +10,14 @@ const Header = (props) => {
     let total = 0;
     programmers.map(data => total += data.salary);
 
+    let [budgetPrice, setBudgetPrice] = useState(500000);
+
+    function budget(event) {
+        setBudgetPrice(event.target.value)
+        console.log(budgetPrice)
+        return;
+    }
+
     return (
         <div>
             <div className='header'>
@@ -17,7 +26,8 @@ const Header = (props) => {
                     <span className='hints'>just select your choise we will contact you :)</span>
                 </div>
                 <div className='enterBudget'>
-                    <input placeholder='Enter Your Budget' type="" />
+                    <h3>Budget: {budgetPrice} TK</h3>
+                    <input onChange={budget} defaultValue='500000' placeholder='Enter Your Budget' type="number" />
                     <i class="fas fa-dollar-sign"></i>
                     {/* <i class="fas fa-search"></i> */}
                 </div>
@@ -51,7 +61,7 @@ const Header = (props) => {
                         </i>
                     </div>
                     <div className='salaryShow'>
-                        <h3>Total: {total}</h3>
+                        <h3>Total: {total} TK</h3>
                     </div>
                 </div>
             </div>

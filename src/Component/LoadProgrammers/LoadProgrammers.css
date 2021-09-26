@@ -1,8 +1,8 @@
 .programmer-wrap{
     width: 90%;
-    margin: 10px auto;
+    margin: 90px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 50px;
+    row-gap: 30px;
     column-gap: 50px;
 }

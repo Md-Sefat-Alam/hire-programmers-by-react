@@ -3,6 +3,11 @@
     justify-content: space-evenly;
     height: 60px;
     background-color: #CCCCFF;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    border-bottom: 2px solid gray;
 }
 .siteTitle{
     user-select: none;
@@ -28,16 +33,23 @@
     flex-direction: row-reverse;
     align-items: center;
 }
+.enterBudget h3{
+    margin-left: 10px;
+    width: 200px;
+}
 .enterBudget input{
     padding: 5px 10px;
     margin-left: 10px;
     border-radius: 5px;
     border: 1px solid gray;
     background-color: #CCCCFF;
+    /* background-color: white; */
+    width: 130px;
 }
 .enterBudget input:focus{
     outline: none;
     border: 2px solid #0046c0;
+    background-color: white;
 }
 .enterBudget i{
     color: #0046c0;
@@ -115,7 +127,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: red;
+    background-color: lightgray;
     overflow: hidden;
     margin-right: 10px;
     border: 3px solid #0046c0;;
@@ -141,5 +153,6 @@
 
 .selectionPart .salaryShow{
     margin-left: 20px;
+    width: 170px;
 
 }
