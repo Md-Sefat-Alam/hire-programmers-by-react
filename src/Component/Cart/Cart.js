@@ -27,7 +27,6 @@ const Cart = (props) => {
             links.push(<a href={youtube} rel='noreferrer' style={{ textDecoration: 'none', color: '#FF0000', padding: '3px' }} target='_blank'><i class="fab fa-youtube-square"></i></a>)
         }
     }
-    console.log(links)
 
     return (
         <div className='cart'>
@@ -61,7 +60,7 @@ const Cart = (props) => {
             </div>
             <div className='cart_selection'>
                 <button>See More..</button>
-                <button>Select</button>
+                <button onClick={() => props.cartClickSelect({ id, name, img, salary })}>Select</button>
             </div>
         </div>
     );

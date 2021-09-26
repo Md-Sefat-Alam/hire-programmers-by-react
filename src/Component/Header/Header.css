@@ -43,6 +43,10 @@
     color: #0046c0;
     font-size: 25px;
 }
+.selectionPart{
+    display: flex;
+    align-items: center;
+}
 
 .selectedPersion{
     height: 60px;
@@ -55,9 +59,6 @@
     cursor: pointer;
     position: relative;
 }
-.selectedPersion i:hover{
-    color: #0040af;
-}
 .selectedPersion span{
     color: white;
     font-size: 14px;
@@ -67,4 +68,78 @@
     position: absolute;
     top: -5px;
     right: -5px;
+}
+
+.dropdownMenu{
+    position: absolute;
+    right: 0;
+    top: 50;
+    z-index: 999999;
+    background-color: white;
+    width: 280px;
+    font-size: 16px;
+    display: none;
+}
+.selectedPersion i:hover{
+    color: black;
+}
+.selectedPersion i:hover .dropdownMenu{
+    transition: all 0.3s;
+    display: block;
+}
+.dropdownMenu ul{
+    box-shadow: 0px 10px 20px 1px black;
+}
+.dropdownMenu ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-bottom: 1px solid lightgray;
+}
+.dropdownMenu ul li:hover{
+    transition: all 0.3s;
+    transform: scale(1.1);
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.dropdownMenu ul li .dropdown_wrap{
+    display: flex;
+    align-items: center;
+}
+.dropdownMenu ul li .dropdown_img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red;
+    overflow: hidden;
+    margin-right: 10px;
+    border: 3px solid #0046c0;;
+}
+.dropdownMenu ul li .dropdown_salary{
+    color: gray;
+}
+
+.dropdownMenu ul li .deSelect{
+    color: black;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+}
+.dropdownMenu ul li .deSelect:hover{
+    color: white;
+    border: 1px solid red;
+    background-color: red;
+}
+
+.selectionPart .salaryShow{
+    margin-left: 20px;
+
 }
