@@ -7,7 +7,7 @@
     position: fixed;
     top: 0;
     z-index: 9999999;
-    border-bottom: 2px solid gray;
+    /* border-bottom: 3px solid rgba(124, 112, 112, 0.59); */
 }
 .siteTitle{
     user-select: none;
@@ -75,7 +75,7 @@
     color: white;
     font-size: 14px;
     background-color: red;
-    padding: 2px 2px;
+    padding: 2px 5px;
     border-radius: 12px;
     position: absolute;
     top: -5px;

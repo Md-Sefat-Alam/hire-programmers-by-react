@@ -3,6 +3,8 @@
     border-radius: 10px;
     padding: 10px;
     position: relative;
+    /* box-shadow: 0px 0px 20px lightgray; */
+    box-shadow: 0px 0px 20px rgb(148, 151, 199);
 }
 .cartTop{
     display: flex;
@@ -97,13 +99,15 @@
     border-radius: 5px;
     /* border: 1px solid #0046c0; */
     border: none;
-    background-color: #0046c0;
+    background-color: #2460c9;
     color: white;
     font-weight: bolder;
     cursor: pointer;
     transition: all 0.3s;
+    box-shadow: 0px 0px 10px blue;
 }
 .cart_selection button:hover{
     color: white;
     background-color: #0b57db;
+    box-shadow: 0px 0px 30px blue;
 }
