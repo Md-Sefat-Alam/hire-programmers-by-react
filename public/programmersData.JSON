@@ -58,9 +58,9 @@
         "teamWorkAbility": true,
         "img": "https://scontent.fdac31-1.fna.fbcdn.net/v/t31.18172-1/p200x200/22384087_10154819682976891_5369315647445272063_o.jpg?_nc_cat=109&ccb=1-5&_nc_sid=7206a8&_nc_ohc=xJ-p7Tmq-bAAX_d76M8&_nc_ht=scontent.fdac31-1.fna&oh=78e1f88551d8fa31ad94cc24da40b90c&oe=617646B4",
         "links": {
-            "web": "jhankarmahbub.com",
+            "web": "https://www.jhankarmahbub.com/",
             "git": "",
-            "fb": "https://scontent.fdac31-1.fna.fbcdn.net/v/t31.18172-1/p200x200/22384087_10154819682976891_5369315647445272063_o.jpg?_nc_cat=109&ccb=1-5&_nc_sid=7206a8&_nc_ohc=xJ-p7Tmq-bAAX_d76M8&_nc_ht=scontent.fdac31-1.fna&oh=78e1f88551d8fa31ad94cc24da40b90c&oe=617646B4",
+            "fb": "https://www.facebook.com/JhankarMahbub/?show_switched_toast=0&show_switched_tooltip=0&show_podcast_settings=0",
             "linkedin": "",
             "mail": "",
             "youtube": "https://www.youtube.com/jhankarmahbub"
@@ -104,7 +104,7 @@
         "profession": "Web Developer",
         "experience": 3,
         "salary": 150000,
-        "rating": 4.8,
+        "rating": 3.8,
         "totalProjectCount": 1050,
         "programmingLanguages": [
             "java",

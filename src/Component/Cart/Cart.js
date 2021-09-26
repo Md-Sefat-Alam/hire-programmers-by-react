@@ -1,10 +1,33 @@
 import React from 'react';
+import { getRatingStars } from '../../utilities/rating';
 import './Cart.css'
 
 const Cart = (props) => {
     const { id, name, job, profession, salary, experience, rating, totalProjectCount, teamWorkAbility, img, } = props.programmer;
     // const [] = props.programmer.programmingLanguages
-    // links
+    const { web, git, fb, linkedin, mail, youtube } = props.programmer.links
+    const links = [];
+    if (web || git || fb || linkedin || mail || youtube) {
+        if (web) {
+            links.push(<a href={web} rel='noreferrer' style={{ textDecoration: 'none', color: 'black', padding: '3px' }} target='_blank'><i class="fas fa-globe"></i></a>)
+        }
+        if (git) {
+            links.push(<a href={git} rel='noreferrer' style={{ textDecoration: 'none', color: 'black', padding: '3px' }} target='_blank'><i class="fab fa-github"></i></a>)
+        }
+        if (fb) {
+            links.push(<a href={fb} rel='noreferrer' style={{ textDecoration: 'none', color: '#4267B2', padding: '3px' }} target='_blank'><i class="fab fa-facebook-square"></i></a>)
+        }
+        if (linkedin) {
+            links.push(<a href={linkedin} rel='noreferrer' style={{ textDecoration: 'none', color: '#2867B2', padding: '3px' }} target='_blank'><i class="fab fa-linkedin"></i></a>)
+        }
+        if (mail) {
+            links.push(<a href={mail} rel='noreferrer' style={{ textDecoration: 'none', color: 'green', padding: '3px' }} target='_blank'><i class="far fa-envelope"></i></a>)
+        }
+        if (youtube) {
+            links.push(<a href={youtube} rel='noreferrer' style={{ textDecoration: 'none', color: '#FF0000', padding: '3px' }} target='_blank'><i class="fab fa-youtube-square"></i></a>)
+        }
+    }
+    console.log(links)
 
     return (
         <div className='cart'>
@@ -14,8 +37,10 @@ const Cart = (props) => {
                         <p><span>{id}</span></p>
                     </div>
                     <div className="cart_right">
-                        <p>ratings: {rating}</p>
-                        <p>links: </p>
+                        {getRatingStars(rating)}
+                        <p className='cart_links'>
+                            {links}
+                        </p>
                     </div>
                 </div>
                 <div className='cartTop_img'>
